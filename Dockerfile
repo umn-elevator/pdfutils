@@ -15,8 +15,8 @@ RUN     apt-get -yqq update && \
 
 MAINTAINER  Colin McFadden <mcfa0086@umn.edu>
 
-ADD     shrinkpdf.sh /opt/shrinkpdf.sh
-RUN     chmod a+x /opt/shrinkpdf.sh
+ADD     shrinkpdf.sh /usr/local/bin/shrinkpdf
+RUN     chmod a+x /usr/local/bin/shrinkpdf
 ADD     policy.xml  /etc/ImageMagick-6/policy.xml
 
 
