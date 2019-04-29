@@ -20,7 +20,7 @@ RUN     chmod a+x /opt/shrinkpdf.sh
 ADD     policy.xml  /etc/ImageMagick-6/policy.xml
 
 
-CMD         ["--help"]
+# CMD         ["--help"]
 # ENTRYPOINT  [""]
 ENV     LC_ALL=C.UTF-8
 ENV     LANG=C.UTF-8
