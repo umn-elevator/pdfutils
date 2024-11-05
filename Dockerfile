@@ -1,9 +1,9 @@
-FROM        ubuntu:18.04
+FROM        ubuntu:24.04
 
 WORKDIR     /tmp/workdir
 
 RUN     apt-get -yqq update && \
-        apt-get --no-install-recommends -yqq install poppler-utils libpoppler73 tesseract-ocr ghostscript ocrmypdf && \
+        apt-get --no-install-recommends -yqq install poppler-utils libpoppler134 tesseract-ocr ghostscript ocrmypdf && \
         rm -rf /var/lib/apt/lists/*
 
 MAINTAINER  Colin McFadden <mcfa0086@umn.edu>
